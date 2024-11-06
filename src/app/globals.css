@@ -2,26 +2,86 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.container{
+  border: 2px solid black;
+  width: 60%;
+  margin:2% 15%;
+  margin-left: 20%;
+  background-color: rgb(252, 226, 194);
+}
+.bg{
+  background-image: url(../../public/images/bg.png);
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  padding:50px 20px;
+}
+h1{
+  font-size: 60px;
+  margin-top: 40px;
+  text-align: center;
+  font-weight: bolder;
+  color: rgb(179, 145, 214);
+  margin-bottom: 30px;
+  
+}
+h2{
+  font-size: 25px;
+  text-align: left;
+  color: green;
+  margin: 20px 20px;
+  font-weight: 600;
+}
+.btn{
+  color: black;
+  width: 25%;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  font-weight: 700;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.btn:hover{
+  background-color: rgb(4, 92, 4);
+  box-shadow: 2px 2px 6px palevioletred;
+  color: red;
+}
+.btn2{
+  color: black;
+  width: 100%;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  justify-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-size: 20px;
+}
+.btn2:hover{
+  background-color: rgb(62, 214, 62);
+  box-shadow: 2px 2px 6px palevioletred;
+  color: #fff;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.finish h2{
+  font-size: 35px;
+  text-align: center;
+  color: green;
+  margin: 20px 20px;
+  font-weight: 600;
 }
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.finish p{
+    font-size: 25px;
+    text-align: center;
+    color: red;
+    margin: 20px 20px;
+    font-weight: 600;
 }
